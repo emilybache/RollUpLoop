@@ -5,16 +5,16 @@
 
 static void hello_world(std::ostream &os)
 {
-    int i = 0;
-    os << "hello " << i << "\n";
-    i = 1;
-    os << "hello " << i << "\n";
-    i = 2;
-    os << "hello " << i << "\n";
-    i = 3;
-    os << "hello " << i << "\n";
-    i = 4;
-    os << "hello " << i << "\n";
+    int n = 0;
+    os << "hello " << n << "\n";
+    n = 1;
+    os << "hello " << n << "\n";
+    n = 2;
+    os << "hello " << n << "\n";
+    n = 3;
+    os << "hello " << n << "\n";
+    n = 4;
+    os << "hello " << n << "\n";
 }
 
 #endif //ROLL_UP_LOOP_ROLL_UP_LOOP_H
