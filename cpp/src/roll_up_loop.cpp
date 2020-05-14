@@ -47,9 +47,8 @@ void timers(std::ostream &os) {
     pointers_to_functions[4] = dy9x;
     pointers_to_functions[5] = monitoring_time;
 
-    unsigned int smallest = INT_MAX;
-    for (int i = 0; i < 6; ++i) {
-        pointers_to_functions[i](os);
+    for (auto & pointers_to_function : pointers_to_functions) {
+        pointers_to_function(os);
     }
 }
 
