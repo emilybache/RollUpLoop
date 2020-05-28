@@ -32,17 +32,12 @@ void monitoring_time(std::ostream &os) {
 }
 
 void timers(std::ostream &os) {
-    void (*pointers_to_functions[6])(std::ostream &os);
-    pointers_to_functions[0] = idt;
-    pointers_to_functions[1] = p88n;
-    pointers_to_functions[2] = time_quota;
-    pointers_to_functions[3] = zb12;
-    pointers_to_functions[4] = dy9x;
-    pointers_to_functions[5] = monitoring_time;
-
-    for (auto & pointers_to_function : pointers_to_functions) {
-        pointers_to_function(os);
-    }
+    idt(os);
+    p88n(os);
+    time_quota(os);
+    zb12(os);
+    dy9x(os);
+    monitoring_time(os);
 }
 
 void ipv6(std::ostream &os) {
