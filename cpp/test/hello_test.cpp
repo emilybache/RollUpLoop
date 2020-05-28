@@ -18,3 +18,10 @@ TEST_CASE ("Timers") {
 
     ApprovalTests::Approvals::verify(to_approve.str());
 }
+
+TEST_CASE("IPv6") {
+    std::stringstream to_approve;
+    ipv6(to_approve);
+
+    ApprovalTests::Approvals::verify(to_approve.str());
+}
