@@ -52,4 +52,18 @@ void timers(std::ostream &os) {
     }
 }
 
+void ipv6(std::ostream &os) {
+    unsigned short data[16];
+    unsigned long ipv6[4];
+
+    int index = 0;
+
+    ipv6[0] = data[index];
+    ipv6[1] = data[index + 4];
+    ipv6[2] = data[index + 8];
+    ipv6[3] = data[index + 12];
+
+    os << ipv6 << "\n";
+}
+
 
