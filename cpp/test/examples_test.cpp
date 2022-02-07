@@ -2,7 +2,9 @@
 
 #include "ApprovalTests.hpp"
 
-#include "roll_up_loop.h"
+#include "example1.h"
+#include "example2.h"
+#include "example3.h"
 
 
 TEST_CASE ("hello_world") {
